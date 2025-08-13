@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather— Check Weather</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="page">
+
+    <header class="hero">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 24 24" aria-hidden>
+          <path d="M6 12a6 6 0 1112 0 6 6 0 01-12 0z" fill="currentColor" />
+        </svg>
+        <h1>WeatherWise</h1>
+      </div>
+
+      <p class="subtitle">Fast, accurate weatherapp — search or use your location.</p>
+
+      <form id="searchForm" class="search">
+        <input id="cityInput" type="text" placeholder="Enter a city (e.g. Lagos, NG)" autocomplete="off" />
+        <button type="submit" class="btn btn-primary">Search</button>
+        <button type="button" id="locBtn" title="Use my location" class="btn btn-ghost">📍</button>
+      </form>
+
+      <div class="controls">
+        <label class="unit-toggle">
+          <input type="checkbox" id="unitToggle" />
+          <span>°C / °F</span>
+        </label>
+      </div>
+    </header>
+
+
+    <section id="weatherCard" class="card hidden" aria-live="polite">
+      <div class="card-left">
+        <h2 id="locationName">—</h2>
+        <p id="weatherDesc" class="muted">—</p>
+        <div class="temp-row">
+          <div id="temp" class="temp">--°C</div>
+          <div id="iconWrap" class="icon-wrap" aria-hidden>
+
+          </div>
+        </div>
+        <ul class="meta">
+          <li><strong id="humidity">--</strong><span>Humidity</span></li>
+          <li><strong id="wind">--</strong><span>Wind</span></li>
+          <li><strong id="feels">--</strong><span>Feels like</span></li>
+        </ul>
+      </div>
+
+      <div class="card-right">
+        <div id="backgroundDecor" class="bg-decor"></div>
+      </div>
+    </section>
+
+
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+
+    <footer class="footer">
+      <small>Copyright © Aliu Fuad.All rights reserved</small>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
