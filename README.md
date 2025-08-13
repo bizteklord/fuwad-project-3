@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-
-
-# OpenWeather – Weather App
+## OpenWeather – Weather App
 
 ## Description
 OpenWeather is a simple weather forecasting app that uses the OpenWeather API t     o display real-time weather information for any location.
-
+ 
 ## Features
 - 🌎 Search weather by city name
 - 📊 Displays temperature, condition, and location
